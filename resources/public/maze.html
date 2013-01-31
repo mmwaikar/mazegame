@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>A mysterious maze in ClojureScript</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+    <table border="0" width="100%" cellpadding="20" cellspacing="0">
+      <tr>
+        <td align="center" width="70%">
+          <div id="mazediv"></div>
+        </td>
+
+        <td align="center" valign="top" width="30%">
+          <h1>
+            Mysterious
+            <br>Maze</br>
+          </h1>
+          <small id="directions"></small>
+          <p />
+          <div id="scorediv" style="background-color: grey;color:yellow">
+            SCORE: 0
+          </div>
+          <p />
+          <div id="statdiv" style="background-color: grey;color:yellow">
+            WAITING...
+          </div>
+          <p />
+          <select id="level">
+            <option value="0">(Select a difficulty level)</option>
+          </select>
+          <p />
+          <input id="start" type="button" value="Start New Game" />
+        </td>
+      </tr>
+    </table>
+
+    <div class="copy">
+      "Copyright &copy; 2013 Manoj Waikar. All Rights Reserved."
+    </div>
+
+    <script src="js/maze.js"></script>
+  </body>
+
+</html>
